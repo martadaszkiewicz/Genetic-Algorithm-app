@@ -1,0 +1,26 @@
+.result-container {
+  background-color: #5170bf;
+  border-radius: 10px;
+  padding: 20px;
+  border: 2px solid #396978;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+}
+.result-cost,
+.result-sequence,
+.result-time,
+.result-x,
+.result-y {
+  margin: 10px 0;
+  font-size: 18px;
+  color: white;
+}
+
+.trial-plot {
+  text-align: center; 
+  margin-top: 15px;
+}

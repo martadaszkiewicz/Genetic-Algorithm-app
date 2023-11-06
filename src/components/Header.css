@@ -1,0 +1,42 @@
+.header {
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .description-button, .use-algorithm-button {
+    background-color: transparent;
+    border: 2px solid rgb(59, 90, 175);
+    color: #000000;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .description-button:hover,
+  .use-algorithm-button:hover {
+    background-color: #98e7ff;
+    transform: scale(0.95);
+    color: #000000;
+    box-shadow: 2px 2px 2px #7e6c6c;
+    transform: scale(0.95);
+    transition: transform 0.2s;
+  }
+  
+  .active-button {
+    background-color: #98e7ff;
+    transform: scale(0.95);
+    color: #000000;
+  }
