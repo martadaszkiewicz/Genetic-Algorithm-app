@@ -124,6 +124,10 @@
 .exemplary-fill-button:hover {
   background-color: #98e7ff;
   transform: scale(0.98);
+}
 
+.processing-info {
+  text-align: justify;
+  font-style: italic;
 }
 

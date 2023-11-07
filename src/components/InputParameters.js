@@ -124,6 +124,9 @@ const InputParameters = ({ state, handleInputChange, runGeneticAlgorithm }) => {
         {state.loading && <Loader />}
       </div>
 
+      <div className='processing-info'>
+        {state.loading ? 'Remember. Computation time may differ in a due to a chosen path length or parameter values. If you chosen trial of 10 cities with great population size, it may take a while to calculate the results.':''}
+      </div>
 
       <Modal
         isOpen={modalIsOpen}
