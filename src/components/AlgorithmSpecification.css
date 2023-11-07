@@ -1,0 +1,53 @@
+.specification {
+    background-color: #5170bf;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #396978;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+.specification-text {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: white;
+  }
+
+  .computation-description {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  .computation-buttons {
+    text-align: center;
+  }
+  
+  .computation-button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    border: 2px solid #396978;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  
+  .computation-button.active {
+    background-color: #98e7ff;
+    transform: scale(0.95);
+    color: #000000;
+  }
+  
+  .computation-button:hover {
+    background-color: #98e7ff;
+    transform: scale(0.95);
+    color: #000000;
+  }
+

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Description from './components/Description';
 import InputParameters from './components/InputParameters';
 import ResultsDisplay from './components/ResultsDisplay';
+import AlgorithmSpecification from './components/AlgorithmSpecification';
 import './index.css'; 
 
 
@@ -19,6 +20,7 @@ class App extends Component {
       result: null,
       showDescription: false,
       showInput: false,
+      showSpecification: false,
       loading: false,
       cost: null, 
       sequence: null,
@@ -34,11 +36,15 @@ class App extends Component {
   }
 
   showDescription = () => {
-    this.setState({ showDescription: true, showInput: false });
+    this.setState({ showDescription: true, showInput: false, showSpecification: false });
   }
 
   showInput = () => {
-    this.setState({ showDescription: false, showInput: true });
+    this.setState({ showDescription: false, showInput: true, showSpecification: false });
+  }
+
+  showSpecification = () => {
+    this.setState({ showDescription: false, showInput: false, showSpecification: true})
   }
 
   runGeneticAlgorithm = () => {
@@ -66,14 +72,12 @@ class App extends Component {
       });
   }
   
-  
-
   render() {
     const { result, cost, sequence, time_to_process, x_results, y_results } = this.state;
 
     return (
       <div className="App">
-        <Header showDescription={this.showDescription} showInput={this.showInput} />
+        <Header showDescription={this.showDescription} showInput={this.showInput} showSpecification={this.showSpecification} />
         {this.state.showDescription && <Description />}
         {this.state.showInput && (
           <InputParameters
@@ -82,8 +86,8 @@ class App extends Component {
           runGeneticAlgorithm={this.runGeneticAlgorithm}
         />
         )}
+        {this.state.showSpecification && <AlgorithmSpecification/>}
 
-        {/* Conditionally render the ResultsDisplay component if there are results */}
         {result || cost || sequence || time_to_process || x_results || y_results ? (
         <ResultsDisplay
           result={result}

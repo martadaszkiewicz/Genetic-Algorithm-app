@@ -15,7 +15,9 @@
     margin: 10px 0;
   }
   
-  .description-button, .use-algorithm-button {
+  .description-button, 
+  .use-algorithm-button,
+  .specification-algorithm-button {
     background-color: transparent;
     border: 2px solid rgb(59, 90, 175);
     color: #000000;
@@ -26,7 +28,8 @@
   }
   
   .description-button:hover,
-  .use-algorithm-button:hover {
+  .use-algorithm-button:hover,
+  .specification-algorithm-button:hover {
     background-color: #98e7ff;
     transform: scale(0.95);
     color: #000000;
