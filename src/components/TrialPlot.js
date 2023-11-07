@@ -5,11 +5,14 @@ const TrialPlot = ({ xResults, yResults }) => {
     
 // xResults and yResults are arrays of coordinates
 // the plot include the returne to the starting point, so the arrays have to be extended:
-  xResults.push(xResults[0]);
-  yResults.push(yResults[0]);
+  
+const extendedXResults = [...xResults, xResults[0]]; // it is much better to create a new variable here which wont influence the global Results in the raw display
+const extendedYResults = [...yResults, yResults[0]];
+
+
   const trace = {
-    x: xResults,
-    y: yResults,
+    x: extendedXResults,
+    y: extendedYResults,
     mode: 'lines+markers',
     type: 'scatter',
     marker: { size: 6, color: 'red' },
