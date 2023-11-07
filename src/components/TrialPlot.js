@@ -6,7 +6,7 @@ const TrialPlot = ({ xResults, yResults }) => {
 // xResults and yResults are arrays of coordinates
 // the plot include the returne to the starting point, so the arrays have to be extended:
   
-const extendedXResults = [...xResults, xResults[0]]; // it is much better to create a new variable here which wont influence the global Results in the raw display
+const extendedXResults = [...xResults, xResults[0]]; // it is much better to create a new variable here which won't influence the global Results in the raw display
 const extendedYResults = [...yResults, yResults[0]];
 
 

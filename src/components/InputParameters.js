@@ -33,9 +33,24 @@ const InputParameters = ({ state, handleInputChange, runGeneticAlgorithm }) => {
     setModalIsOpen(false);
   };
 
+  const fillWithExemplaryValues = () => {
+    handleInputChange({ target: { name: "x", value: "3, 2, 12, 7,  9,  3, 16, 11, 9, 2" } });
+    handleInputChange({ target: { name: "y", value: "1, 4, 2, 4.5, 9, 1.5, 11, 8, 10, 7" } });
+    handleInputChange({ target: { name: "P", value: "250" } });
+    handleInputChange({ target: { name: "n", value: "0.8" } });
+    handleInputChange({ target: { name: "p_m", value: "0.2" } });
+  };
+
+
   return (
     <div className="input-parameters">
       <h2 className="input-text-header">Input your parameters values</h2>
+
+      <button 
+      className='exemplary-fill-button' 
+      onClick={fillWithExemplaryValues}>
+        fill with the example
+      </button>
 
       <div className="parameter">
         <div className="label">x coordinates (comma-separated):</div>
@@ -97,6 +112,7 @@ const InputParameters = ({ state, handleInputChange, runGeneticAlgorithm }) => {
         />
       </div>
 
+
       <div className="run-button-element">
         <button
           className={`run-button ${state.loading ? 'loading' : ''}`}
@@ -107,6 +123,8 @@ const InputParameters = ({ state, handleInputChange, runGeneticAlgorithm }) => {
         </button>
         {state.loading && <Loader />}
       </div>
+
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

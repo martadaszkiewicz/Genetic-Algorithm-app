@@ -57,30 +57,6 @@
 .input-text-header {
   margin-top: 0px;
 }
-/* bolow statments have inproper labels. (saving it for a while for future decisions) */
-
-/* .x-input-text, .y-input-text, .P-input-text, .n-input-text, .p_m-input-text {
-  width: 48%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-} */
-
-/* .x-input, .y-input, .P-input, .n-input, .p_m-input {
-  width: 100%;
-  background-color: #98e7ff;
-
-  color: #000000;
-  border: 1px solid #3d3632;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-top: 5px;
-  outline: none;
-} */
-
-/* .x-input:focus, .y-input:focus, .P-input:focus, .n-input:focus, .p_m-input:focus {
-  background-color: #ffffff;
-} */
 
 .run-button-element {
   text-align: center;
@@ -127,7 +103,7 @@
 
 .input-field {
   flex: 2;
-  background-color: #98e7ff;
+  background-color: #98e7ffcc;
   border: 1px solid #396978;
   padding: 5px 10px;
   border-radius: 5px;
@@ -135,6 +111,19 @@
   outline: none;
 }
 
+.exemplary-fill-button {
+  text-align: right;
+  padding: 7px 10px;
+  margin-bottom: 5px;
+  background-color: #98e7ffcc;
+  border-radius: 5px;
+  border: 2px solid rgb(59, 90, 175);
+  font-size: 15px;
+  color: #000000;
+}
+.exemplary-fill-button:hover {
+  background-color: #98e7ff;
+  transform: scale(0.98);
 
-
+}
 
