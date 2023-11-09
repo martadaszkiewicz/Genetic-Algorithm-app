@@ -1,0 +1,18 @@
+.try-it-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sequence-frame {
+    border: 2px solid #a840e0;
+    padding: 10px;
+    margin: 5px;
+    background-color: #b91919;
+}
+
+.sequence-number {
+    margin: 0 5px;
+    font-size: 18px;
+}
