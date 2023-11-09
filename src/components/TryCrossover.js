@@ -2,6 +2,7 @@ import React from 'react';
 import './TryCrossover.css';
 
 const TryCrossover = ({ sequences }) => {
+    
     return (
         <div className='try-it-container'>
             {sequences.map((sequence, index) => (

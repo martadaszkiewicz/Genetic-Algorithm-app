@@ -5,6 +5,8 @@ import TryCrossover from './TryCrossover';
 const AlgorithmSpecification = () => {
     const [selectedComputation, setSelectedComputation] = useState(null);
     const [showTryItButton, setShowTryItButton] = useState(false);
+    
+
     const ComputationDescription = {
         "Cost value":"The function is a vital component of the genetic algorithm for the Traveling Salesman Problem (TSP), responsible for determining the cost or total distance associated with each sequence of cities in the given population. Its primary objective is to assess the efficiency of a particular sequence in visiting all cities and returning to the starting point. Upon receiving the initial population, the function iterates through each sequence and calculates the total distance. This computation includes the Euclidean distances between consecutive cities, with special consideration for the distance between the first and last city to form a closed loop representative of the TSP.",
         "Selection Operator":"The Selection Operator is a key element in the genetic algorithm for the Traveling Salesman Problem (TSP), responsible for choosing a subset of sequences from the population based on their cumulative probability of total costs. This function takes in a matrix representing a population of sequences with associated costs. It calculates the inverse of these costs to obtain a fitness measure and subsequently computes the probabilities of each sequence being selected as a parent. The sequences are then sorted based on these probabilities. The selection process involves iteratively picking sequences until a specified proportion (determined by the coefficient n) of the population is chosen. A random threshold is generated to guide the selection, ensuring diversity. The cumulative probabilities of the sorted sequences are compared with this threshold, and sequences are selected accordingly.",
@@ -65,6 +67,7 @@ const AlgorithmSpecification = () => {
                     
                         <p>{selectedComputation}</p>
                         {showTryItButton && (
+                            
                             <div className='try-containter'>
                                 <button className="try-it-button" onClick={handleTryItClick}>
                                     Try It!
